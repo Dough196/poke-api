@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply py-3 px-4 font-bold bg-blue/75 text-white rounded-lg focus:outline-none focus:ring focus:ring-opacity-75;
+  }
+  /* .btn-secondary {
+    @apply py-3 px-4 font-bold bg-secondary text-white rounded-lg focus:outline-none focus:ring focus:ring-opacity-75;
+  }
+  .btn-white {
+    @apply py-3 px-4 font-bold bg-white border border-separator text-black rounded-lg focus:outline-none focus:ring focus:ring-opacity-75;
+  } */
+
+  .disabled {
+    @apply bg-gray/75 text-white pointer-events-none;
+  }
+
+  /* .txt-label {
+    @apply block text-hint text-small font-medium mb-1;
+  } */
+
+  .form-input {
+    @apply block border border-gray rounded-lg;
+  }
+}
+
+.pokemon-card img {
+  transition: height 0.3s ease;
+}
+
+.pokemon-card:hover {
+  transform: scale(1.1);
+}
+
+.pokemon-card:hover img {
+  height: 10rem;
+}
